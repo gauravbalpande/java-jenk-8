@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Checking out code...'
-                checkout scm
+                git url: 'https://github.com/gauravbalpande/java-jenk-8.git', branch: 'main'
             }
         }
         
